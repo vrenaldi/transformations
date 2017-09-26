@@ -1,7 +1,10 @@
-import * as Detector from 'three/examples/js/Detector.js'
+import * as Detector from 'three/examples/js/Detector.js';
 import '../css/main.css';
 
-import { loadContent } from './content.js'
+import { loadContent } from './content.js';
+import { loadController } from './controller.js';
+
+import { loadExample } from './example.js';
 
 main();
 
@@ -12,9 +15,16 @@ function main() {
     }
 
     loadContent();
+    loadController();
+
+    // loadExample();
 }
 
 
 console.log('Hello world!!');
+
+// reference:
+// https://threejs.org/docs/#api/math/Matrix4
+// https://github.com/mrdoob/three.js/issues/1188
 
 // https://github.com/webpack/webpack-dev-server/issues/1101
