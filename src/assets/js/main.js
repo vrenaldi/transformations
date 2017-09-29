@@ -4,8 +4,6 @@ import '../css/main.css';
 import { loadContent } from './content.js';
 import { loadController } from './controller.js';
 
-import { loadExample } from './example.js';
-
 main();
 
 function main() {
@@ -16,8 +14,6 @@ function main() {
 
     loadContent();
     loadController();
-
-    // loadExample();
 }
 
 

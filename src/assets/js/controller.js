@@ -13,9 +13,7 @@ var controller = {
 }
 
 function loadController() {
-    controller.camera.rotation.x = -45;
-    controller.camera.position.y = 25;
-    controller.camera.position.z = 25;
+    controller.object.position.z = -25;
 
     window.addEventListener('load', onWindowLoad, false);
 }
@@ -26,7 +24,7 @@ function onWindowLoad() {
     var object = gui.addFolder('Object (Cube)');
     var camera = gui.addFolder('Camera');
 
-    
+
     // TODO: optimize assignment
     var objPosition = object.addFolder('Position');
     objPosition.add(controller.object.position, 'x', -100, 100).step(1).name('Position X').onChange(function (value) { updateController(controller); });
@@ -39,9 +37,9 @@ function onWindowLoad() {
     objQuaternion.add(controller.object.rotation, 'z', -360, 360).step(1).name('Rotation Z').onChange(function (value) { updateController(controller); });
 
     var objScale = object.addFolder('Scale');
-    objScale.add(controller.object.scale, 'x', -10, 10).name('Scale X').onChange(function (value) { updateController(controller); });
-    objScale.add(controller.object.scale, 'y', -10, 10).name('Scale Y').onChange(function (value) { updateController(controller); });
-    objScale.add(controller.object.scale, 'z', -10, 10).name('Scale Z').onChange(function (value) { updateController(controller); });
+    objScale.add(controller.object.scale, 'x', 0.5, 2).name('Scale X').onChange(function (value) { updateController(controller); });
+    objScale.add(controller.object.scale, 'y', 0.5, 2).name('Scale Y').onChange(function (value) { updateController(controller); });
+    objScale.add(controller.object.scale, 'z', 0.5, 2).name('Scale Z').onChange(function (value) { updateController(controller); });
 
 
     var camPosition = camera.addFolder('Position');
@@ -55,9 +53,9 @@ function onWindowLoad() {
     camQuaternion.add(controller.camera.rotation, 'z', -360, 360).name('Rotation Z').onChange(function (value) { updateController(controller); });
 
     var camScale = camera.addFolder('Scale');
-    camScale.add(controller.camera.scale, 'x', -10, 10).name('Scale X').onChange(function (value) { updateController(controller); });
-    camScale.add(controller.camera.scale, 'y', -10, 10).name('Scale Y').onChange(function (value) { updateController(controller); });
-    camScale.add(controller.camera.scale, 'z', -10, 10).name('Scale Z').onChange(function (value) { updateController(controller); });
+    camScale.add(controller.camera.scale, 'x', 0.5, 2).name('Scale X').onChange(function (value) { updateController(controller); });
+    camScale.add(controller.camera.scale, 'y', 0.5, 2).name('Scale Y').onChange(function (value) { updateController(controller); });
+    camScale.add(controller.camera.scale, 'z', 0.5, 2).name('Scale Z').onChange(function (value) { updateController(controller); });
 
 
     object.open();
