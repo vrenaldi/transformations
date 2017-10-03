@@ -1,9 +1,6 @@
 # transformations
 
 
-----------
-
-
 Comparing model and view matrix.  
 This project visualizes the impact of applying transformations matrices to an object (model matrix) and to the world (view matrix).
 
@@ -13,9 +10,6 @@ The screen is divided horizontally into two parts:
 
 
 ### Usage ###
-
-
-----------
 
 
 Transformations (translation, rotation and scaling) can be applied to the object and the world through the controller on the upper right screen. Drag the mouse or scroll the wheel mouse on the lower part of the screen to rotate or zoom in/out respectively.
