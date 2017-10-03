@@ -1,5 +1,6 @@
 # transformations
 
+[![License][license-badge]][license-badge-url]
 
 Comparing model and view matrix.  
 This project visualizes the impact of applying transformations matrices to an object (model matrix) and to the world (view matrix).
@@ -14,4 +15,7 @@ The screen is divided horizontally into two parts:
 
 Transformations (translation, rotation and scaling) can be applied to the object and the world through the controller on the upper right screen. Drag the mouse or scroll the wheel mouse on the lower part of the screen to rotate or zoom in/out respectively.
 
-***Best viewed on desktop.***
+***Best viewed on desktop - touch input is not supported yet.***
+
+[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-badge-url]: ./LICENSE
