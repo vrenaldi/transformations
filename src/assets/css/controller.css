@@ -1,0 +1,67 @@
+.dg {
+    font-family: 'Droid Sans Mono', Helvetica;
+    text-shadow: none;
+}
+
+.dg.main .close-button {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+    /* -webkit-transition: background-color 250ms linear;
+    -ms-transition: background-color 250ms linear; */
+    transition: background-color 250ms linear;
+}
+
+.dg.main .close-button:hover {
+    background-color: #DC3522;
+
+    /* -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear; */
+    transition: background-color 500ms linear;
+}
+
+.dg li:not(.folder) {
+    background-color: #333333;
+    color: #FFFFFF;
+    
+    transition: background-color 150ms linear;
+}
+
+.dg li:not(.folder):hover {
+    background-color: #3c3c3c;
+
+    transition: background-color 300ms linear;
+}
+
+.dg li.title {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-weight: bold;
+
+    transition: background-color 250ms linear;
+}
+
+.dg li.title:hover {
+    background-color: #2980B9;
+
+    transition: background-color 500ms linear;
+}
+
+.dg .cr.number {
+    border-left: 3px solid #3498DB;
+}
+
+.dg .c .slider,
+.dg .c .slider:hover {
+    background-color: #1a1a1a;
+}
+
+.dg .c .slider-fg {
+    background-color: #3498DB;
+}
+
+.dg .cr.number input[type=text] {
+    background-color: #1a1a1a;
+    color: #3498DB;
+}

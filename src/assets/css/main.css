@@ -3,6 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: auto;
+
+    font-family: 'Droid Sans Mono', Helvetica;
 }
 
 canvas {

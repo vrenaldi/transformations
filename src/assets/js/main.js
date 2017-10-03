@@ -4,6 +4,8 @@ import '../css/main.css';
 import { loadContent } from './content.js';
 import { loadController } from './controller.js';
 
+import { overrideStyles } from './styles.js';
+
 main();
 
 function main() {
@@ -14,6 +16,7 @@ function main() {
 
     loadContent();
     loadController();
+    overrideStyles();
 }
 
 
