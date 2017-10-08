@@ -21,7 +21,7 @@ module.exports = {
             template: 'src/index.html'
         }),
         new webpack.ProvidePlugin({
-            'THREE': 'three'
+            'THREE': 'three/build/three.min.js'
         })
     ]
 };
